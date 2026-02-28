@@ -1,4 +1,17 @@
-bitrix
-upload
-local/php_interface/vendor
+# Bitrix core
+/bitrix/
+/upload/
+/local/php_interface/vendor/
 
+# cache
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+
+# logs
+*.log
+
+# system
+/.idea/
+/.vscode/
+/node_modules/
