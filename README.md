@@ -4,12 +4,12 @@ Bitrix Project – Обжорозаврик🦖
 Проект создаётся в рамках подготовки к практике и освоения разработки на Bitrix.
 
 🛠 Технологии
-- PHP 8.1
-- 1C-Bitrix
-- MySQL
-- Bootstrap 4
-- jQuery
-- JavaSCript
+#PHP 8.1
+#1C-Bitrix
+#MySQL
+#Bootstrap 4
+#jQuery
+#JavaSсript
   
 
 📂 Структура проекта
