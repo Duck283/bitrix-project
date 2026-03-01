@@ -1,50 +1,124 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Контактная информация");
+$APPLICATION->SetTitle("Приют динозавриков");
 ?>
-<p>Обратитесь к нашим специалистам и получите профессиональную консультацию по услугам нашего банка.</p>
+<div class="container">
 
-<p>Вы можете обратиться к нам по телефону, по электронной почте или договориться о встрече в нашем офисе. Будем рады помочь вам и ответить на все ваши вопросы. </p>
+        <h1 class="mt-4 mb-3">Приют динозавров</h1>
 
-<h2>Телефоны</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumb-item active">Приют динозавриков</li>
+        </ol>
 
-<ul>
-  <li>Телефон/факс: 
-    <ul>
-      <li><b>(495) 212-85-06</b> </li>
-    </ul>
-  </li>
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="<?= SITE_TEMPLATE_PATH ?>/images/dino_at_home.jpg" data-fancybox data-caption="Приют динозавриков">
+                    <img class="img-fluid rounded mb-4" src="<?= SITE_TEMPLATE_PATH ?>/images/dino_at_home.jpg" alt="Приют динозавриков">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Возьми динозаврика домой</h2>
+                <p>В нашем уникальном приюте найти себе друга - просто. Множество чудесных малышей ждут своего хозяина.</p>
+                <p><strong>Как завести себе друга</strong></p>
+                <ul>
+                    <li>Выберите своего красавчика</li>
+                    <li>Заполните форму обратной связи</li>
+                    <li>Приезжайте знакомиться</li>
+                </ul>
+                <p>А если вы не готовы взять питомца домой, то вы можете поддержать наш приют, еда, припасы и теплые носочки, все пригодится нашим обжорозаврикам.</p>
+            </div>
+        </div>
 
-  <li>Телефоны: 
-    <ul>
-      <li><b>(495) 212-85-07</b> </li>
-    
-      <li><b>(495) 212-85-08</b> </li>
-    </ul>
-  </li>
-</ul>
+        <h2>Динозаврики ищут дом</h2>
 
-<h2>Наш офис в Москве</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <a href="<?= SITE_TEMPLATE_PATH ?>/images/shelter/marusya.jpg" data-fancybox data-caption="Маруся">
+                        <img class="card-img-top p-2" src="<?= SITE_TEMPLATE_PATH ?>/images/shelter/marusya.jpg" alt="Маруся">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Маруся</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">5 лет</h6>
+                        <p class="card-text">Маруся специализируется на покушать и на платьицах. Как в нее влезает столько еды, и она остается стройной для своих платьев.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-success">Ласковый</span>
+                        <span class="badge badge-secondary">Обжорка</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <a href="<?= SITE_TEMPLATE_PATH ?>/images/shelter/tiranny.jpg" data-fancybox data-caption="Малыш тираннозаврик">
+                        <img class="card-img-top p-2" src="<?= SITE_TEMPLATE_PATH ?>/images/shelter/tiranny.jpg" alt="Малыш тираннозаврик">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Малыш тираннозаврик</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">3 месяца</h6>
+                        <p class="card-text">Еще совсем недавно вылупился из яйца, ищет себе новый дом. Очень активный и любопытный.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-primary">Активный</span>
+                        <span class="badge badge-danger">Хищник</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <a href="<?= SITE_TEMPLATE_PATH ?>/images/shelter/semen.jpg" data-fancybox data-caption="Семен">
+                        <img class="card-img-top p-2" src="<?= SITE_TEMPLATE_PATH ?>/images/shelter/semen.jpg" alt="Семен">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Семен</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">30 лет</h6>
+                        <p class="card-text">Диплодока Семена уже ничем не удивить. Взрослый, воспитанный, обаятельный и интеллигентный.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-secondary">Обжорка</span>
+                        <span class="badge badge-info">Спокойный</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <h3>Хочу динозаврика</h3>
+                <form name="sentMessage" id="contactForm">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя...">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" class="form-control" id="phone" required placeholder="+7(000)000-00-00">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label for="message">Комментарий:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required style="resize:none" placeholder="Введите какого обжорозаврика вы хотите и почему..."></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-primary" id="sendMessageButton">Хочу динозаврика</button>
+                </form>
+            </div>
 
-<p><?$APPLICATION->IncludeComponent("bitrix:map.google.view", ".default", array(
-	"KEY" => "ABQIAAAAOSNukcWVjXaGbDo6npRDcxS1yLxjXbTnpHav15fICwCqFS-qhhSby0EyD6rK_qL4vuBSKpeCz5cOjw",
-	"INIT_MAP_TYPE" => "NORMAL",
-	"MAP_DATA" => "a:3:{s:10:\"google_lat\";s:7:\"55.7383\";s:10:\"google_lon\";s:7:\"37.5946\";s:12:\"google_scale\";i:13;}",
-	"MAP_WIDTH" => "600",
-	"MAP_HEIGHT" => "500",
-	"CONTROLS" => array(
-		0 => "LARGE_MAP_CONTROL",
-		1 => "MINIMAP",
-		2 => "HTYPECONTROL",
-		3 => "SCALELINE",
-	),
-	"OPTIONS" => array(
-		0 => "ENABLE_SCROLL_ZOOM",
-		1 => "ENABLE_DBLCLICK_ZOOM",
-		2 => "ENABLE_DRAGGING",
-	),
-	"MAP_ID" => ""
-	),
-	false
-);?></p>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+        </div>
+
+    </div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -1,173 +1,104 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Банковские карты");
+$APPLICATION->SetTitle("Карточка динозавра");
 ?>
-									
-	<h2>Кредитные Карты</h2>
-	
-	<table cellspacing="0" class="data-table"> 
-	<tr>
-		<th valign="top" width="60%">Срок действия Карты</th> 
-		<th valign="top">3 года</th>
-	</tr> 
-	<tr class="alt-row">
-		<td valign="top">Комиссия за ежегодное осуществление расчетов по операциям с Основной Картой.</td> 
-		<td valign="top">600 руб. / 25 долл. США / 25 евро</td>
-	</tr> 
-	<tr>
-		<td valign="top">Льготный период оплаты</td> 
-		<td valign="top">до 50 календарных дней</td>
-	</tr> 
-	<tr class="alt-row">
-		<td valign="top">Ежемесячный минимальный платеж 
-		(в процентах от суммы задолженности по Овердрафтам):</td> 
-		<td valign="top">10% </td>
-	</tr> 
-	<tr>
-		<td valign="top">Дополнительные проценты/штрафы/комиссии/ на сумму неразрешенного Овердрафта</td> 
-		<td valign="top">не взимается (отменена с 1 марта) </td>
-	</tr> 
-	<tr class="alt-row">
-		<td valign="top">Комиссия за учет Отчетной суммы задолженности, непогашенной на последний календарный день Льготного периода оплаты.</td>
-		<td></td>
-	</tr> 
-	 
-	<tr>
-		<td valign="top">
-			<ul> 
-				<li>для 1-6-го месяцев</li> 
-				<li>для 6-го и последующих месяцев</li> 
-			</ul>
-		</td> 
-	 
-		<td valign="top">
-			<ul> 
-				<li>12% / 15% </li> 
-				<li>21% / 24% </li> 
-			</ul> 
-		</td>
-	</tr> 
-	<tr class="alt-row">
-		<td valign="top"> 
-			<ul> 
-				<li>в пунктах выдачи наличных или банкоматах "Банка" </li> 
-				<li>в банкоматах банков-партнеров "Объединенной расчетной системы (ОРС)" </li> 
-				<li>в пунктах выдачи наличных или банкоматах иного банка </li> 
-			</ul>
-		</td> 
-		<td valign="top">
-			<ul> 
-				<li>0%</li> 
-				<li>0,5%</li > 
-				<li>2,5%</li>
-			</ul>
-		</td>
-	</tr> 
-	 
-	<tr>
-		<td valign="top">Минимальная сумма комиссии по операциям получения наличных денежных средств в пунктах выдачи наличных или банкоматах иного банка. </td> 
-		<td valign="top">150 рублей</td>
-	</tr> 
-	 
-	<tr class="alt-row">
-		<td valign="top">Комиссия за осуществление конвертации по трансграничным операциям (совершенным за пределами территории РФ). </td > 
-		<td valign="top">0,75% </td>
-	</tr> 
-	
-	 
-	</table>
-	 
-	<h2>Расчетные карты Банка</h2>
-	
-	<table cellspacing="0" class="data-table"> 
-	 
-		<tr class="alt-row">
-			<td valign="top" width="60%">Валюта Картсчета</td> 
-			<td valign="top">российские рубли / доллары США / евро</td>
-		</tr> 
-		<tr>
-			<td valign="top">Срок действия карты</td> 
-			<td valign="top">3 года</td>
-		</tr>
-		<tr class="alt-row">
-			<td valign="top">Комиссия за осуществление расчетов в течение одного года по операциям с Основной Картой при ее первичном выпуске.
-				Взимается перед началом каждого года расчетов по действующей Карте из средств на Картсчете.</td> 
-			<td valign="top">500 рублей/20 долл. США/20 евро</td>
-		</tr> 
-		<tr>
-			<td colspan= "2" valign="top">Комиссия за операцию получения наличных денежных средств:</td>
-		</tr> 
-	 
-		<tr class="alt-row">
-			<td colspan= "2" valign="top">до 300 000 рублей (включительно)</td></tr> 
-		<tr>
-			<td valign="top">
-				<ul>
-					<li>в пунктах выдачи наличных или банкоматах «Банка»</li> 
-					<li>в банкоматах банков-партнеров</li> 
-					<li>в пунктах выдачи наличных или банкоматах иного банка</li>
-				</ul>
-			</td> 
-			<td valign="top">
-				<ul>
-					<li>0%</li> 
-					<li>0,5%</li> 								 
-					<li>1,5% мин. 90 руб.</li>
-				</ul>
-			</td>
-		</tr> 
-	 
-		<tr class="alt-row"><td valign="top">от 300 001 до 10 000 000 рублей (включительно)</td> 
-		<td valign="top">2,5% </td></tr> 
-		 
-		 
-		<tr>
-			<td valign="top">от 10 000 001 рубля и выше</td> 
-			<td valign="top">5%</td>
-		</tr> 
-		 
-		 
-		<tr class="alt-row">
-			<td valign="top">Минимальная сумма комиссии по операциям получения наличных денежных средств в пунктах выдачи наличных или банкоматах иного банка. </td> 
-			<td valign="top">90 рублей</td>
-		</tr> 
-		 
-		<tr>
-			<td valign="top">Комиссия за перечисление и конверсию денежных средств в Интернет-банке. </td> 
-			<td valign="top">0%</td>
-		</tr> 
-		 
-		<tr class="alt-row">
-			<td valign="top">Комиссия за остановку операций по Картсчету, совершаемых с использованием Карты, при ее утрате. </td> 
-			<td valign="top">600 рублей/25 долл. США/25 евро</td>
-		</tr>
-		 
-		<tr>
-			<td valign="top">Комиссия за осуществление конверсии по трансграничным операциям (совершенным за пределами территории РФ).</td> 
-			<td valign="top">0,75%</td>
-		</tr> 
-		 
-		<tr class="alt-row">
-			<td valign="top">Выдача Карточки доступа.</td> 
-			<td valign="top">Бесплатно</td>
-		</tr> 
-		 
-		<tr>
-			<td valign="top">Комиссия за оплату услуг в Интернет - банке и в банкоматах Банка. </td> 
-			<td valign="top">Бесплатно</td>
-		</tr> 
-		 
-		<tr class="alt-row">
-			<td valign="top">Комиссия за учет перерасхода средств (в процентах годовых от суммы перерасхода). </td> 
-			<td valign="top">36%</td>
-		</tr> 
-		 
-		<tr>
-			<td valign="top">Комиссия за отправку SMS сообщений о суммах проведенных по Карте операций и доступном балансе в течение ее срока действия.</td> 
-			<td valign="top">Бесплатно</td>
-		</tr> 
-	 
-	</table>	
+<div class="container">
 
- 
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+        <h1 class="mt-4 mb-3">Динозавр:
+            <small>Тираннозавр</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="/services/fiz/">Динозавры</a>
+            </li>
+            <li class="breadcrumb-item active">Тираннозавр</li>
+        </ol>
+
+        <div class="row">
+
+            <div class="col-md-8 text-center">
+                <a href="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr.jpg" data-fancybox data-caption="Тираннозавр">
+                    <img class="img-fluid" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr.jpg" alt="Тираннозавр">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="my-3">Тираннозавр</h3>
+                <p>Тиранноза́вр — монотипический род плотоядных динозавров из группы целурозавров подотряда теропод, включающий единственный валидный вид — Tyrannosaurus rex.</p>
+                <h3 class="my-3">Особенности динозавра</h3>
+                <ul>
+                    <li><b>Латинское название</b>: Tyrannosaurus</li>
+                    <li><b>Рост</b>: 3,7 – 6,1 м</li>
+                    <li><b>Масса</b>: 4 500 – 14 000 кг</li>
+                    <li><b>Скорость</b>: 27 км/ч</li>
+                    <li><b>Продолжительность жизни</b>: 30 лет</li>
+                    <li><b>Хищник</b>: Да</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <hr>
+
+        <h3 class="my-4">О динозавре</h3>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in
+                        <cite title="Source Title">Source Title</cite>
+                    </footer>
+                </blockquote>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <h3 class="my-4">Галерея</h3>
+
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr1.jpg" data-fancybox="gallery" data-caption="Большой Тираннозавр">
+                    <img class="img-fluid" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr1.jpg" alt="Большой Тираннозавр">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr2.jpg" data-fancybox="gallery" data-caption="Тираннозавр The Isle">
+                    <img class="img-fluid" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr2.jpg" alt="Тираннозавр The Isle">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr3.jpg" data-fancybox="gallery" data-caption="Тираннозавр ругается">
+                    <img class="img-fluid" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr3.jpg" alt="Тираннозавр ругается">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr4.jpg" data-fancybox="gallery" data-caption="Тираннозавр поближе">
+                    <img class="img-fluid" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/tirannozavr/tirannozavr4.jpg" alt="Тираннозавр поближе">
+                </a>
+            </div>
+        </div>
+
+    </div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

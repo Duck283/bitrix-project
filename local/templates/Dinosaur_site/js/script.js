@@ -1,1 +1,3 @@
-$.fancybox.defaults.loop = true;
+if (window.jQuery && $.fancybox) {
+  $.fancybox.defaults.loop = true;
+}

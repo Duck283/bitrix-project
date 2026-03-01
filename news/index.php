@@ -1,92 +1,121 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новости компании");
+$APPLICATION->SetTitle("Блог");
 ?>
-<p><?$APPLICATION->IncludeComponent("bitrix:news", ".default", array(
-	"IBLOCK_TYPE" => "news",
-	"IBLOCK_ID" => "1",
-	"NEWS_COUNT" => "20",
-	"USE_SEARCH" => "N",
-	"USE_RSS" => "Y",
-	"NUM_NEWS" => "20",
-	"NUM_DAYS" => "30",
-	"YANDEX" => "N",
-	"USE_RATING" => "N",
-	"USE_CATEGORIES" => "N",
-	"USE_REVIEW" => "N",
-	"USE_FILTER" => "N",
-	"SORT_BY1" => "ACTIVE_FROM",
-	"SORT_ORDER1" => "DESC",
-	"SORT_BY2" => "SORT",
-	"SORT_ORDER2" => "ASC",
-	"CHECK_DATES" => "Y",
-	"SEF_MODE" => "Y",
-	"SEF_FOLDER" => "/news/",
-	"AJAX_MODE" => "N",
-	"AJAX_OPTION_SHADOW" => "Y",
-	"AJAX_OPTION_JUMP" => "N",
-	"AJAX_OPTION_STYLE" => "Y",
-	"AJAX_OPTION_HISTORY" => "N",
-	"CACHE_TYPE" => "A",
-	"CACHE_TIME" => "36000000",
-	"CACHE_FILTER" => "N",
-	"CACHE_GROUPS" => "Y",
-	"DISPLAY_PANEL" => "N",
-	"SET_TITLE" => "N",
-	"SET_STATUS_404" => "N",
-	"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-	"ADD_SECTIONS_CHAIN" => "Y",
-	"USE_PERMISSIONS" => "N",
-	"PREVIEW_TRUNCATE_LEN" => "",
-	"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
-	"LIST_FIELD_CODE" => array(
-		0 => "",
-		1 => "",
-	),
-	"LIST_PROPERTY_CODE" => array(
-		0 => "",
-		1 => "",
-	),
-	"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-	"DISPLAY_NAME" => "Y",
-	"META_KEYWORDS" => "-",
-	"META_DESCRIPTION" => "-",
-	"BROWSER_TITLE" => "-",
-	"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
-	"DETAIL_FIELD_CODE" => array(
-		0 => "",
-		1 => "",
-	),
-	"DETAIL_PROPERTY_CODE" => array(
-		0 => "",
-		1 => "",
-	),
-	"DETAIL_DISPLAY_TOP_PAGER" => "N",
-	"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
-	"DETAIL_PAGER_TITLE" => "Страница",
-	"DETAIL_PAGER_TEMPLATE" => "",
-	"DETAIL_PAGER_SHOW_ALL" => "N",
-	"DISPLAY_TOP_PAGER" => "N",
-	"DISPLAY_BOTTOM_PAGER" => "Y",
-	"PAGER_TITLE" => "Новости",
-	"PAGER_SHOW_ALWAYS" => "N",
-	"PAGER_TEMPLATE" => "",
-	"PAGER_DESC_NUMBERING" => "N",
-	"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
-	"PAGER_SHOW_ALL" => "N",
-	"DISPLAY_DATE" => "Y",
-	"DISPLAY_PICTURE" => "Y",
-	"DISPLAY_PREVIEW_TEXT" => "Y",
-	"AJAX_OPTION_ADDITIONAL" => "",
-	"SEF_URL_TEMPLATES" => array(
-		"news" => "",
-		"section" => "",
-		"detail" => "#ELEMENT_ID#/",
-		"search" => "search/",
-		"rss" => "rss/",
-		"rss_section" => "#SECTION_ID#/rss/",
-	)
-	),
-	false
-);?></p>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<div class="container">
+
+        <h1 class="mt-4 mb-3">Блог</h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumb-item active">Блог</li>
+        </ol>
+
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Хищный или травоядный</h2>
+                        <h6 class="card-subtitle mb-2 text-muted">Мнение эксперта</h6>
+                        <p class="card-text">Вопрос: какого динозаврика взять хищного или травоядного - самый острый при выборе своего питомца. Как не ошибиться с выбром и взять подходящего для себя малыша, рассказывают эксперты.</p>
+                        <a href="/news/" class="btn btn-primary">Подробнее &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Опубликовано вчера, автор: <a href="#">Профессор Никифор</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="<?= SITE_TEMPLATE_PATH ?>/images/blog_vegan.jpeg" alt="Велоцираптор Веган">
+                    <div class="card-body">
+                        <h2 class="card-title">Велоцираптор Веган</h2>
+                        <h6 class="card-subtitle mb-2 text-muted">Разное</h6>
+                        <p class="card-text">Всякое бывает. Наш велоцираптор ни в какую не хочет кушать мясо. Ни птицу, ни рыбу, вообще ни кусочка. Любит кашу и брокколи. Мы уже давно смирились с этим, а в этой статье я оставлю несколько советов, что делать в такой ситуации.</p>
+                        <a href="/news/" class="btn btn-primary">Подробнее &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Опубликовано три дня назад, автор: аноним
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Когда у динозаврика режутся зубки</h2>
+                        <h6 class="card-subtitle mb-2 text-muted">Воспитание</h6>
+                        <p class="card-text">Когда у вашего динозаврика режутся зубки, это очень тяжелый период как для малыша, так и для вас. Убирайте все, что можно грызть. Потому что погрызано будет все. И главное: терпение, терпение и еще раз терпение.</p>
+                        <a href="/news/" class="btn btn-primary">Подробнее &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Опубликовано неделю назад, автор: аноним
+                    </div>
+                </div>
+
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Назад">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Назад</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Вперед">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Вперед</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card mb-4">
+                    <h5 class="card-header">Найти в блоге</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Поиск...">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card my-4">
+                    <h5 class="card-header">Темы</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="/news/">Воспитание</a>
+                                    </li>
+                                    <li>
+                                        <a href="/news/">Мнение эксперта</a>
+                                    </li>
+                                    <li>
+                                        <a href="/news/">Разное</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

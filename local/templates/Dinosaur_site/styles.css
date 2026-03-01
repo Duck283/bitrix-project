@@ -82,3 +82,63 @@ body {
 .dropdown-toggle::after {
   vertical-align: baseline;
 }
+
+.site-content {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+.site-content:not(.site-content-home) {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.site-content:not(.site-content-home) > * {
+  margin-bottom: 1rem;
+}
+
+.site-content h1,
+.site-content h2,
+.site-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.site-content p,
+.site-content ul,
+.site-content ol {
+  margin-bottom: 1rem;
+  color: #343a40;
+  line-height: 1.65;
+}
+
+.site-content a {
+  color: #17a2b8;
+}
+
+.site-content a:hover {
+  color: #117a8b;
+  text-decoration: none;
+}
+
+.site-content .data-table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.site-content .data-table th,
+.site-content .data-table td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.site-content .data-table tr.alt-row td {
+  background-color: #f8f9fa;
+}

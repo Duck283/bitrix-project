@@ -11,7 +11,8 @@ $APPLICATION->SetTitle("Title");
                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="background-image: url('images/banners/dino_banner_1.jpg')">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="<?= SITE_TEMPLATE_PATH ?>/images/banners/dino_banner_1.jpg" alt="Динозаврик баннер 1">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Динозавры не игрушки</h3>
                         <hr class="border-light">
@@ -23,7 +24,8 @@ $APPLICATION->SetTitle("Title");
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('images/banners/dino_banner_2.jpg')">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="<?= SITE_TEMPLATE_PATH ?>/images/banners/dino_banner_2.jpg" alt="Динозаврик баннер 2">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Когда у динозаврика режутся зубки</h3>
                         <hr class="border-light">
@@ -35,7 +37,8 @@ $APPLICATION->SetTitle("Title");
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('images/banners/dino_banner_3.jpg')">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="<?= SITE_TEMPLATE_PATH ?>/images/banners/dino_banner_3.jpg" alt="Динозаврик баннер 3">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Хорошего динозавра много не бывает</h3>
                         <hr class="border-light">
@@ -47,7 +50,8 @@ $APPLICATION->SetTitle("Title");
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('images/banners/dino_banner_4.jpg')">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="<?= SITE_TEMPLATE_PATH ?>/images/banners/dino_banner_4.jpg" alt="Динозаврик баннер 4">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Хищный или травоядный</h3>
                         <hr class="border-light">
@@ -70,6 +74,38 @@ $APPLICATION->SetTitle("Title");
             </a>
         </div>
     </section>
-
-    <div class="container">
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Популярные динозаврики</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/triceratops.jpg" alt="Трицератопс">
+                        <div class="card-body">
+                            <h5 class="card-title">Трицератопс</h5>
+                            <p class="card-text">Спокойный травоядный друг для всей семьи.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/pterodaktil.jpg" alt="Птеродактиль">
+                        <div class="card-body">
+                            <h5 class="card-title">Птеродактиль</h5>
+                            <p class="card-text">Активный и любопытный питомец для прогулок.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="<?= SITE_TEMPLATE_PATH ?>/images/dinosaurs/velociraptor_p.jpg" alt="Велоцираптор">
+                        <div class="card-body">
+                            <h5 class="card-title">Велоцираптор</h5>
+                            <p class="card-text">Умный и энергичный, подходит опытным хозяевам.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
