@@ -6,7 +6,7 @@ use Bitrix\Main\Page\Asset;
 $asset = Asset::getInstance();
 
 // CSS
-$asset->addCss($APPLICATION->GetTemplatePath('/vendor/bootstrap/css/bootstrap.min.css'));
+$asset->addCss($APPLICATION->GetTemplatePath('/vendor/bootstrap/css/bootstrap.css'));
 $asset->addCss($APPLICATION->GetTemplatePath('/vendor/fontawesome-free/css/all.css'));
 $asset->addCss($APPLICATION->GetTemplatePath('/vendor/jquery.fancybox/jquery.fancybox.css'));
 
